@@ -1,0 +1,551 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.nav-container {
+    font-family: sans-serif;
+    /* background-color: aquamarine; */
+    height: 58px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo>img {
+    height: 30px;
+}
+
+.nav-Inner {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-Inner li {
+    /* display: none; */
+    list-style: none;
+    /* Remove bullet points from list items */
+}
+
+.ten {
+    margin-left: auto;
+
+}
+
+.one {
+    padding: 10px;
+}
+
+.one a {
+    text-decoration: none;
+    /* Remove underline decoration from anchor tags */
+    color: rgb(99, 99, 99);
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.one a:hover {
+    border-bottom: 2px solid black;
+}
+
+.invisible {
+    display: none;
+}
+
+.same img {
+    height: 25px;
+}
+
+@media screen and (max-width:852px) {
+    .nav-Inner {
+        display: none;
+    }
+
+    .sam3 {
+        margin: auto; 
+        
+    }
+
+    .invisible {
+        /* display: block; */
+        width: 90%;
+        height: 58px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .invisible .same {
+        list-style: none;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:328px) {
+    .invisible .same {
+        padding: none;
+    }
+
+    .invisible {
+        width: 100%;
+    }
+}
+
+/* Slider */
+
+.slider {
+    position: static;
+    width: 100%;
+    height: 64vh;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-Containt {
+    overflow: hidden;
+    position: relative;
+    width: 99%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.img1 img {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+
+}
+
+
+.main-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box,
+.left-box {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+/* .left-box{
+        border: 2px solid blue;
+    } */
+.left-box h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+
+}
+
+.left-box h4 {
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.left-box button {
+    border-style: none;
+    padding: 13px 25px 13px 25px;
+    background-color: rgb(69, 69, 205);
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    border-radius: 3px;
+}
+
+.resBox {
+    display: none;
+}
+
+@media screen and (max-width:1042px) {
+    .main-box {
+        display: none;
+    }
+
+
+    .resBox {
+        position: static;
+        z-index: 2;
+        top: 200px;
+        left: 80px;
+        right: 80px;
+        background-color: white;
+        height: 230px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        font-size: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        margin-bottom: 40px; 
+    }
+
+    .resBox h1 {
+        font-family: sans-serif;
+        letter-spacing: 1px; 
+        overflow: hidden;
+    }
+
+    .resBox h4 {
+        font-family: sans-serif;
+        color: rgb(85, 85, 85); 
+        overflow: hidden;
+    }
+
+    .resBox button {
+        border-style: none;
+        padding: 13px 25px 13px 25px;
+        background-color: rgb(69, 69, 205);
+        font-weight: 600;
+        font-size: 15px;
+        color: white;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .resBox {
+        position: absolute;
+        left: 0;
+        right: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .resBox h1 {
+        font-size: 22px;
+    }
+
+    .resBox button {
+        /* padding: 0px 0px 0px 0px;  */
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+}
+
+/* link Logo */
+.linkLogo {
+    /* border: 2px solid black; */
+    height: 150px;
+    width: 100%;
+    margin-top: 87px;
+    margin-bottom: 30px;
+}
+
+#linkImg {
+    height: 40px;
+
+}
+
+.linkFlex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.liFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.liFlex a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(0, 103, 184);
+}
+
+@media screen and (max-width:819px) {
+    .linkLogo {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width:449px) {
+    .linkLogo {
+        height: 236px;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .linkLogo {
+        height: 315px;
+    }
+}
+
+/* BoxCard  */
+.card-container,
+.templet-container {
+    /* Other styles */
+    height: auto;
+    /* Remove fixed height */
+    width: 100%;
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Automatically fit columns with minimum 300px and maximum 1 fraction */
+    gap: 20px;
+    /* Gap between cards */
+    padding: 0px 60px;
+}
+
+.card,
+.temp {
+    /* Other styles */
+    margin-bottom: 20px;
+    height: 517px;
+    /* Remove fixed height */
+    width: 100%;
+    /* Width for each card */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    /* Card shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.card img,
+.temp img {
+    cursor: pointer;
+}
+
+.card h1,
+.temp h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 0px 35px 0px 20px;
+    overflow: hidden;
+}
+
+.card h4,
+.temp h4 {
+    padding: 0px 35px 0px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(19, 19, 19);
+    padding-left: 20px;
+    line-height: 20px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.card1 button,
+.temp1 button {
+    height: 40px;
+    width: 110px;
+    margin-top: 75px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(0, 103, 184);
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+
+}
+
+.card1 button:hover,
+.card2 button:hover,
+.card3 button:hover,
+.card4 button:hover {
+    background-color: rgb(21, 124, 203);
+}
+
+.temp1 button:hover,
+.temp2 button:hover,
+.temp3 button:hover,
+.temp4 button:hover {
+    background-color: rgb(21, 124, 203);
+}
+
+.tem1 button {
+    margin-top: 110px;
+}
+
+.card3 button,
+.temp3 button {
+    height: 40px;
+    width: 170px;
+    margin-top: 150px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(0, 103, 184);
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+
+.card4 button,
+.temp4 button {
+    display: block;
+    height: 40px;
+    width: 134px;
+    /* margin-top: px; */
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(0, 103, 184);
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+
+.card4 a,
+.temp4 a {
+    font-size: 17px;
+    padding-left: 20px;
+    color: rgb(0, 103, 184);
+    text-decoration: none; 
+    overflow: hidden;
+}
+
+.card4 a:hover,
+.temp4 a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:425px) {
+
+    .card-container,
+    .templet-container {
+        padding: 0px 0px;
+    } 
+    
+}
+
+.head {
+    /* border: 2px solid saddlebrown; */
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.head h1 {
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.white-img {
+    /* position: absolute; */
+    margin-top: 40px;
+    /* Apply margin-top */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 55px;
+    /* Adjust padding */
+    margin-bottom: 90px;
+
+}
+
+@media screen and (max-width:424px) {
+    .head {
+        margin-left: 0px; 
+    } 
+    .head h1{
+        font-size: 30px;
+    }
+
+    .white-img {
+        margin-top: 25px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:1003px) {
+    .main-box {
+        display: none;
+    }
+}
+
+.about-container {
+    height: auto;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 100px;
+    row-gap: 30px;
+    padding: 40px;
+    background-color: rgb(233, 233, 233);
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.sec h4 {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.sec a {
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.sec a:hover {
+    color: black;
+}  
